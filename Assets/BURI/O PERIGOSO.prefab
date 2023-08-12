@@ -1,0 +1,270 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &44657400794241266
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: d3dac4531e7b62d4886e8f2132121fd7, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.33
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: d3dac4531e7b62d4886e8f2132121fd7, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.33
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: d3dac4531e7b62d4886e8f2132121fd7, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.33
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: d3dac4531e7b62d4886e8f2132121fd7, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: d3dac4531e7b62d4886e8f2132121fd7, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: d3dac4531e7b62d4886e8f2132121fd7, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: d3dac4531e7b62d4886e8f2132121fd7, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: d3dac4531e7b62d4886e8f2132121fd7, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: d3dac4531e7b62d4886e8f2132121fd7, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: d3dac4531e7b62d4886e8f2132121fd7, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: d3dac4531e7b62d4886e8f2132121fd7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: d3dac4531e7b62d4886e8f2132121fd7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: d3dac4531e7b62d4886e8f2132121fd7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: d3dac4531e7b62d4886e8f2132121fd7, type: 3}
+      propertyPath: m_ConstrainProportionsScale
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -5905956238499492617, guid: d3dac4531e7b62d4886e8f2132121fd7, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 0976f680be3a5c3449387cbac857b1e5, type: 2}
+    - target: {fileID: -5905956238499492617, guid: d3dac4531e7b62d4886e8f2132121fd7, type: 3}
+      propertyPath: m_Materials.Array.data[1]
+      value: 
+      objectReference: {fileID: 2100000, guid: 061c08b9303fb754db59e2b780b7ba12, type: 2}
+    - target: {fileID: -5905956238499492617, guid: d3dac4531e7b62d4886e8f2132121fd7, type: 3}
+      propertyPath: m_Materials.Array.data[2]
+      value: 
+      objectReference: {fileID: 2100000, guid: 39d60eda62eadc14796ff607b722a779, type: 2}
+    - target: {fileID: -5905956238499492617, guid: d3dac4531e7b62d4886e8f2132121fd7, type: 3}
+      propertyPath: m_Materials.Array.data[3]
+      value: 
+      objectReference: {fileID: 2100000, guid: 25e8b4a97c3aaa14fb58781361dec26f, type: 2}
+    - target: {fileID: -5905956238499492617, guid: d3dac4531e7b62d4886e8f2132121fd7, type: 3}
+      propertyPath: m_Materials.Array.data[4]
+      value: 
+      objectReference: {fileID: 2100000, guid: 562589e40b27a9e4f877bb18d34a33d3, type: 2}
+    - target: {fileID: -5905956238499492617, guid: d3dac4531e7b62d4886e8f2132121fd7, type: 3}
+      propertyPath: m_Materials.Array.data[5]
+      value: 
+      objectReference: {fileID: 2100000, guid: c753960dfd5b05941a9815d2b701e62f, type: 2}
+    - target: {fileID: -5905956238499492617, guid: d3dac4531e7b62d4886e8f2132121fd7, type: 3}
+      propertyPath: m_Materials.Array.data[6]
+      value: 
+      objectReference: {fileID: 2100000, guid: 3d41ac723985fd8498926db836a1139e, type: 2}
+    - target: {fileID: -5905956238499492617, guid: d3dac4531e7b62d4886e8f2132121fd7, type: 3}
+      propertyPath: m_Materials.Array.data[7]
+      value: 
+      objectReference: {fileID: 2100000, guid: 8025a93830a562f43b752038a63c76f3, type: 2}
+    - target: {fileID: -5905956238499492617, guid: d3dac4531e7b62d4886e8f2132121fd7, type: 3}
+      propertyPath: m_Materials.Array.data[8]
+      value: 
+      objectReference: {fileID: 2100000, guid: ff3ddc271c862e3419f3c70814d51a7e, type: 2}
+    - target: {fileID: -5905956238499492617, guid: d3dac4531e7b62d4886e8f2132121fd7, type: 3}
+      propertyPath: m_Materials.Array.data[9]
+      value: 
+      objectReference: {fileID: 2100000, guid: 9293abdc388f37f4d8d2f6932036cd61, type: 2}
+    - target: {fileID: -5905956238499492617, guid: d3dac4531e7b62d4886e8f2132121fd7, type: 3}
+      propertyPath: m_Materials.Array.data[10]
+      value: 
+      objectReference: {fileID: 2100000, guid: c63760c4396abba42aa859431d60c21a, type: 2}
+    - target: {fileID: -5905956238499492617, guid: d3dac4531e7b62d4886e8f2132121fd7, type: 3}
+      propertyPath: m_Materials.Array.data[11]
+      value: 
+      objectReference: {fileID: 2100000, guid: 3c04f6a4243cbd14180f99916098ceef, type: 2}
+    - target: {fileID: -5905956238499492617, guid: d3dac4531e7b62d4886e8f2132121fd7, type: 3}
+      propertyPath: m_Materials.Array.data[12]
+      value: 
+      objectReference: {fileID: 2100000, guid: f8d51609f18d18447a567754f8d8f1d4, type: 2}
+    - target: {fileID: 919132149155446097, guid: d3dac4531e7b62d4886e8f2132121fd7, type: 3}
+      propertyPath: m_Name
+      value: BURI3-RENEGADO Variant
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: d3dac4531e7b62d4886e8f2132121fd7, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 7451315897824842757}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: d3dac4531e7b62d4886e8f2132121fd7, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 4303774514037027916}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: d3dac4531e7b62d4886e8f2132121fd7, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 3669934074116830575}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: d3dac4531e7b62d4886e8f2132121fd7, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 9033890029470178789}
+  m_SourcePrefab: {fileID: 100100000, guid: d3dac4531e7b62d4886e8f2132121fd7, type: 3}
+--- !u!1 &891658277759477155 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: d3dac4531e7b62d4886e8f2132121fd7, type: 3}
+  m_PrefabInstance: {fileID: 44657400794241266}
+  m_PrefabAsset: {fileID: 0}
+--- !u!143 &7451315897824842757
+CharacterController:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 891658277759477155}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Height: 9
+  m_Radius: 2
+  m_SlopeLimit: 45
+  m_StepOffset: 0.3
+  m_SkinWidth: 0.08
+  m_MinMoveDistance: 0.001
+  m_Center: {x: -0.4, y: 5.25, z: 0.5}
+--- !u!114 &4303774514037027916
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 891658277759477155}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 197cbc5c4c69f1445a510a949a24321d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _checkGround: 0
+  _speed: 5
+  _speedRotation: 15
+  _jump: 5
+  _timer: 0
+--- !u!114 &3669934074116830575
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 891658277759477155}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 62899f850307741f2a39c98a8b639597, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Actions: {fileID: -944628639613478452, guid: 9519fb8792c10d44c88dbe4568304a6b, type: 3}
+  m_NotificationBehavior: 2
+  m_UIInputModule: {fileID: 0}
+  m_DeviceLostEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_DeviceRegainedEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_ControlsChangedEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_ActionEvents:
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 4303774514037027916}
+        m_TargetAssemblyTypeName: MoveControl, Assembly-CSharp
+        m_MethodName: SetMove
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_ActionId: 45662cb7-0637-4040-b84e-4a5921a8e668
+    m_ActionName: Buri/Movimento[/Keyboard/w,/Keyboard/s,/Keyboard/a,/Keyboard/d,/Keyboard/upArrow,/Keyboard/downArrow,/Keyboard/leftArrow,/Keyboard/rightArrow]
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 4303774514037027916}
+        m_TargetAssemblyTypeName: MoveControl, Assembly-CSharp
+        m_MethodName: SetPular
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_ActionId: 8aa5ce6c-9f59-443e-8cc4-9bf2845550f7
+    m_ActionName: Buri/Pular[/Keyboard/space]
+  m_NeverAutoSwitchControlSchemes: 0
+  m_DefaultControlScheme: 
+  m_DefaultActionMap: Buri
+  m_SplitScreenIndex: -1
+  m_Camera: {fileID: 0}
+--- !u!95 &9033890029470178789
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 891658277759477155}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 081da2a01b2d0dc439290352c1badace, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
