@@ -655,6 +655,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: MapaDesmembrado
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: eb5f6f12d23594249944af8e4057d290, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6510239297181739082, guid: eb5f6f12d23594249944af8e4057d290, type: 3}
       propertyPath: m_LocalPosition.y
       value: -0.1
