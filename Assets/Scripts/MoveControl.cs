@@ -17,6 +17,7 @@ public class MoveControl : MonoBehaviour
 
     private bool _inputPulo; //Input de pulo
     [SerializeField] bool _checkGround; //Verificador se o player está encostando no chão
+    [SerializeField] bool _checkTrepa; //Verificador se o player está próximo ao açaizeiro
 
     private float _gravityValue = -9.81f;
     private float _gravityMultiplier;
@@ -35,7 +36,7 @@ public class MoveControl : MonoBehaviour
     }
 
     void Update()
-    {
+    {   
         Move();
         LookAtMovementDirection();
         if (_inputPulo && _checkGround)
@@ -58,13 +59,15 @@ public class MoveControl : MonoBehaviour
     {
         _movement = new Vector3(_input.x, _controller.velocity.y, _input.y).normalized * _speed * Time.deltaTime;
         _controller.Move(_movement);
-        
+
         // Linhas abaixo feitas para animação do personagem
         float _andar = Mathf.Abs(_input.x) + Mathf.Abs(_input.y);
         float _inputMagnitude = _movement.magnitude;
         _anim.SetFloat("Andar", _andar);
         _anim.SetFloat("VelocidadeY", _controller.velocity.y);
         _anim.SetBool("groundCheck", _checkGround);
+
+
     }
     void LookAtMovementDirection() //Script para virar a frente do personagem voltada a orientação do movimento
     {
@@ -111,6 +114,7 @@ public class MoveControl : MonoBehaviour
         _playerVelocity.y += _gravityValue * _gravityMultiplier * Time.deltaTime;
         _controller.Move(_playerVelocity * Time.deltaTime);
     }
+
     public void SetMove(InputAction.CallbackContext value) //Input direcional X e Z (Input System)
     {
         _input = value.ReadValue<Vector2>();
@@ -119,4 +123,38 @@ public class MoveControl : MonoBehaviour
     {
         _inputPulo = true;
     }
+
+    /*
+    void Update()
+    {
+    // Linhas abaixo pra fazer ele trepar
+        bool _trepa = Input.GetKeyDown(KeyCode.E);
+
+        if (_trepa && _checkTrepa && _checkGround)
+        {
+            Vector3 _trepada = new Vector3(0, _input.y, 0) * _speed * Time.deltaTime;
+            _controller.Move(_trepada);
+        }
+        else
+        {
+            _controller.Move(_movement);
+        }
+    }
+    
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.gameObject.tag == "Trepa")
+        {
+            _checkTrepa = true;
+        }
+    }
+
+    private void OnTriggerExit(Collider other)
+    {
+        if (other.gameObject.tag == "Trepa")
+        {
+            _checkTrepa = false;
+        }
+    }
+    */
 }
