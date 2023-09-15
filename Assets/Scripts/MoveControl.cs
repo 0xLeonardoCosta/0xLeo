@@ -5,7 +5,7 @@ using UnityEngine.InputSystem;
 
 public class MoveControl : MonoBehaviour
 {
-    private Vector2 _input; //Input system, axis: X,Z. 
+    public Vector2 _input; //Input system, axis: X,Z. 
     private Vector3 _playerVelocity;
     private Vector3 _movement;
 
@@ -20,35 +20,61 @@ public class MoveControl : MonoBehaviour
     [SerializeField] bool _checkTrepa; //Verificador se o player está próximo ao açaizeiro
 
     private float _gravityValue = -9.81f;
-    private float _gravityMultiplier;
+    public float _gravityMultiplier;
     [SerializeField] float _speed = 5;
     [SerializeField] float _speedRotation = 15;
     [SerializeField] float _jump = 3;
     [SerializeField] float _timer; // Contador para input de pulo, útil se tiver problema de pulo duplo
+
     private float _timerValue;
+
+    // ----------------- Tutorial de Escada -> UseAcaizeiro variaveis
+
+    UseAcaizeiro _useAcaizeiro;
+
+    public bool _acaizeiro;
 
     void Start()
     {
         _timer = _timerValue;
         _controller = GetComponent<CharacterController>();
         _anim = GetComponent<Animator>();
+        _useAcaizeiro = GetComponent<UseAcaizeiro>();
         AndarN();
     }
 
     void Update()
-    {   
-        Move();
-        LookAtMovementDirection();
-        if (_inputPulo && _checkGround)
+    {
+        if (_acaizeiro == false)
         {
-            Pulo();
+            Move();
+            LookAtMovementDirection();
+            if (_inputPulo && _checkGround)
+            {
+                Pulo();
+            }
+            Gravity();
+            CheckPulo(); // Checa se está encostando no chão e função de timer para normalizar pulo
         }
-        Gravity();
-        CheckPulo(); // Checa se está encostando no chão e função de timer para normalizar pulo
+        if (Input.GetKeyDown(KeyCode.E)) 
         {
-            //Debugando   
-            //Debug.Log("Estou no chão? " + _checkGround);
+            if(_acaizeiro == false)
+            {
+                _useAcaizeiro.GetReferences();
+                _acaizeiro = true;
+            }
+            else
+            {
+                _useAcaizeiro.ExitEscada();
+                _acaizeiro = false;
+            }
         }
+        
+        if (_useAcaizeiro == true)
+        {
+            _acaizeiro = _useAcaizeiro.UpdateEscada();
+        }
+    
     }
     void AndarN()// Sincronizar animações - Andar movimento de perna/Andar movimento de braço
     {
@@ -66,8 +92,6 @@ public class MoveControl : MonoBehaviour
         _anim.SetFloat("Andar", _andar);
         _anim.SetFloat("VelocidadeY", _controller.velocity.y);
         _anim.SetBool("groundCheck", _checkGround);
-
-
     }
     void LookAtMovementDirection() //Script para virar a frente do personagem voltada a orientação do movimento
     {
