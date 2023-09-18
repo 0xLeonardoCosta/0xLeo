@@ -11,6 +11,8 @@ public class InimigoSeMove : MonoBehaviour
     [SerializeField] Transform _player;
     [SerializeField] Transform[] _pos;
 
+    [SerializeField] GameController _gameController; // Sc que está como componente da câmera
+
     //---------------------------------------------
 
     float _distancia;
@@ -40,8 +42,12 @@ public class InimigoSeMove : MonoBehaviour
     {
         _agent = GetComponent<NavMeshAgent>();
         _animator = GetComponent<Animator>();
-        _hit = GetComponent<Hit>();
+        
         _checkTime = _timeLimit;
+        // ---------------------------------------
+        _hit = GetComponent<Hit>();
+        _gameController = Camera.main.GetComponent<GameController>();
+        _player = _gameController._player;
     }
 
 
